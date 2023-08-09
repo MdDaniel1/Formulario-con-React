@@ -1,0 +1,51 @@
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5%; 
+    box-sizing: border-box; 
+    background-size: cover; 
+    background-position: center; 
+    justify-content: space-between; 
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    }
+.redes img{ 
+    height: 5vmin;
+    padding: 0px 15px;
+}
+
+.react{
+    height: 9vmin;
+    pointer-events: none;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .react {
+      animation: react-spin infinite 20s linear;
+    }
+
+}
+  
+@keyframes react-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@media (max-width:768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .footer strong{
+        text-align: center;
+        
+    }
+}
