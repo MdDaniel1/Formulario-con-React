@@ -1,10 +1,12 @@
 import "./teams.css"
 import Colaborador from "../colaborador"
 
+
+
 const Teams = (props) => {
 
     const {primaryColor, secondColor, title} = props.datos
-    const {colaboradores} = props
+    const {colaboradores, eliminarColaborador} = props
     
     const fondo = {
         backgroundColor: secondColor
@@ -21,7 +23,12 @@ const Teams = (props) => {
             <h3 style={bordeTitulo}>{title}</h3>
             <div className="colaboradores">
                 {
-                    colaboradores.map( (colaborador,index) => <Colaborador  datos = {colaborador} key={index} primaryColor={primaryColor} />  )
+                    colaboradores.map( (colaborador,index) => <Colaborador  
+                    datos = {colaborador} 
+                    key={index} 
+                    primaryColor={primaryColor}
+                    eliminarColaborador={eliminarColaborador}
+                    />  )
                 }
             </div>
         </section>

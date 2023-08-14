@@ -1,0 +1,1 @@
+--Formulario realizado con la biblioteca para interfaces de usuario web y nativa REACT, para la creación de equipos realizado por Daniel Martinez donde se puede crear y eliminar colaboradores, a su vez asignarlos a un equipo.

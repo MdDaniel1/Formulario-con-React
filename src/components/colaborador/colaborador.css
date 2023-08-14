@@ -42,3 +42,15 @@
     font-weight: 400;
     margin: 0;
 }
+
+.btn__eliminar{
+    color: #fff;
+    position: absolute;
+    right: -3px;
+    top: -4px;
+    transition: 0.9s;
+}
+
+.btn__eliminar:hover{
+    color: #e20909;
+}

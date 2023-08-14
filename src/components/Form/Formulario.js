@@ -3,6 +3,7 @@ import "./Formulario.css"
 import CampoText from "../campoTexto";
 import OptionLists from "../OptionLists";
 import Button from "../button";
+import {v4 as uuid} from "uuid"
 
 const Form = (props) =>{
 
@@ -10,6 +11,7 @@ const Form = (props) =>{
     const [position,updatePosition] = useState("")
     const [foto,updateFoto] = useState("")
     const [team,updateTeam] = useState("")
+    const id = uuid()
 
     const {registrarColaborador} = props
 
@@ -19,7 +21,8 @@ const Form = (props) =>{
             name,
             position,
             foto,
-            team
+            team,
+            id
         }
         registrarColaborador(datosEnviados);
     }
